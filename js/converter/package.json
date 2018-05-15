@@ -1,0 +1,14 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "A JavaScript library to perform units conversions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --color"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
