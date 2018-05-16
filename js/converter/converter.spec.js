@@ -8,6 +8,9 @@ describe("A units converter", () => {
     expect(uc.CtoF(100)).toBe(212);
     expect(uc.CtoF(10)).toBe(50);
     expect(uc.CtoF(22)).toBe(71.6);
+    expect(uc.CtoF(-10)).toBe(14);
+    expect(uc.CtoF(-20)).toBe(-4);
+    expect(uc.CtoF(-17.78)).toBeCloseTo(0);
   });
 
 });
