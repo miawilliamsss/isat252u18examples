@@ -13,6 +13,16 @@ describe("A units converter", () => {
     expect(uc.CtoF(-17.78)).toBeCloseTo(0);
   });
 
+  it("can convert °F to °C", () => {
+    expect(uc.FtoC(32)).toBe(0);
+    expect(uc.FtoC(212)).toBe(100);
+    expect(uc.FtoC(50)).toBe(10);
+    expect(uc.FtoC(71.6)).toBeCloseTo(22);
+    expect(uc.FtoC(14)).toBe(-10);
+    expect(uc.FtoC(-4)).toBe(-20);
+    expect(uc.FtoC(0)).toBeCloseTo(-17.78);
+  });
+
 });
 
 
