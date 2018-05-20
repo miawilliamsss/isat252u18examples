@@ -1,3 +1,6 @@
+# import pytest for using utilities
+import pytest
+
 # import the code to be tested
 from converter import CtoF
 
@@ -13,4 +16,4 @@ def test_CtoF():
   assert CtoF(22) == 71.6
   assert CtoF(-10) == 14
   assert CtoF(-20) == -4
-  assert CtoF(-17.78) == 0
+  assert pytest.approx(CtoF(-17.78), 0)
